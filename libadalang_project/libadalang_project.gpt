@@ -1,0 +1,13 @@
+
+# Header
+Name: libAdalang Project
+Category: Misc
+Project: @_project_name_@.gpr
+script: template_helper.py
+
+# Variables
+Project_Name: default: The name of the project.
+
+# Description
+[Description]
+A libadalang project template that will initialize version controll

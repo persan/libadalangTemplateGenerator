@@ -1,0 +1,3 @@
+package libadalangTemplateGenerator is
+
+end libadalangTemplateGenerator;
