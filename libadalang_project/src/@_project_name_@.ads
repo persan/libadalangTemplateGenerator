@@ -241,6 +241,8 @@ package @_Project_Name_@ is
 
    procedure On_Ada_Object_Decl (Self : in out Analyzser; Node : Ada_Node'Class);
 
+   procedure On_Ada_Anonymous_Object_Decl (Self : in out Analyzser; Node : Ada_Node'Class);
+
    procedure On_Ada_Extended_Return_Stmt_Object_Decl (Self : in out Analyzser; Node : Ada_Node'Class);
 
    procedure On_Ada_Package_Renaming_Decl (Self : in out Analyzser; Node : Ada_Node'Class);
@@ -460,6 +462,8 @@ package @_Project_Name_@ is
    procedure On_Ada_Range_Spec (Self : in out Analyzser; Node : Ada_Node'Class);
 
    procedure On_Ada_Renaming_Clause (Self : in out Analyzser; Node : Ada_Node'Class);
+
+   procedure On_Ada_Synthetic_Renaming_Clause (Self : in out Analyzser; Node : Ada_Node'Class);
 
    procedure On_Ada_Reverse_Absent (Self : in out Analyzser; Node : Ada_Node'Class);
 

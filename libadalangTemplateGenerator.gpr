@@ -1,5 +1,5 @@
 with "libadalang.gpr";
-
+with "libiconv.gpr";
 project libadalangTemplateGenerator is
 
    for Main use ("libadalangtemplategenerator-main.adb");

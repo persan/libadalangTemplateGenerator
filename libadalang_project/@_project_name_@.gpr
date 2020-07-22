@@ -1,3 +1,4 @@
+with "libiconv.gpr";
 with "libadalang.gpr";
 project @_Project_Name_@ is
 
@@ -26,6 +27,9 @@ project @_Project_Name_@ is
                                 "-gnatyABOabcdfhiklnprtux");
    end Compiler;
 
+   package Binder is
+      for Switches ("Ada") use ("-E");
+   end Binder;
 
    package Documentation is
       for Documentation_Dir use "doc";

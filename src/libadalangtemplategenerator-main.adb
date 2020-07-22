@@ -53,6 +53,7 @@ procedure libadalangTemplateGenerator.Main is
       Put_Line (Outf, "with Libadalang.Common;");
       Put_Line (Outf, "with Ada.Text_IO;");
       Put_Line (Outf, "with GNAT.Source_Info;");
+      Put_Line (Outf, "with Ada.Tags;");
       Put_Line (Outf, "package body " & Name & " is");
       Put_Line (Outf, "");
       Put_Line (Outf, "   use Libadalang.Common;");
@@ -82,7 +83,7 @@ procedure libadalangTemplateGenerator.Main is
             Put_Line (Outf, "      Put_Line (Source_Location & "":"" & Enclosing_Entity & "" >> "" & Node.Kind'Img & "" : "" & Node.Image);");
             Put_Line (Outf, "      for N of Node.Children loop");
             Put_Line (Outf, "         if not N.Is_Null then");
-            Put_Line (Outf, "            case Node.Kind is");
+            Put_Line (Outf, "            case N.Kind is");
             Put_Line (Outf, "               when " & Name & " =>");
             Put_Line (Outf, "                  Self.On_" & Name & " (N);");
             Put_Line (Outf, "               when others =>");
